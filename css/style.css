@@ -51,3 +51,8 @@
     margin: 0 auto;
     padding: 0 10px;
 }
+
+.price-filter {
+    border: none;
+    border-bottom: 1px solid black;
+}

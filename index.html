@@ -13,14 +13,14 @@
         <section class="header-top">
             <div class="container flex">
                 <a href="#" class="header-logo">ТЕХНОМАРТ</a>
-                <form action="" method="GET">
+                <form action="" method="GET" class="search-form">
                     <input type="text" placeholder="Поиск:">
                 </form>
                 <div class="bookmarks-container">
-                    <span class="bookmarks">Закладки:</span>
+                    Закладки: <span class="bookmark-count">0</span>
                 </div>
                 <div class="basket-container">
-                    <span class="basket">Корзина:</span>
+                    Корзина: <span class="basket-count">0</span>
                 </div>
                 <a href="#" class="btn btn-checkout">Оформить заказ</a>
             </div>
@@ -36,18 +36,25 @@
                     <a href="#" class="btn btn-login">Войти</a>
                     <a href="#" class="btn btn-registration">Регистрация</a>
                 </div>
+                <div class="user-logged-in">
+                    <div class="user-name">
+                        <a href="#">Равшан Джамшутович</a>
+                    </div>
+                        <a href="#">Мои заказы</a>
+                        <a href="#">Личный кабинет</a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="flex">
+                        <li>Главная</li>
+                        <li>Компания</li>
+                        <li>Каталог</li>
+                        <li>Новости</li>
+                        <li>Спецпредложения</li>
+                        <li>доставка</li>
+                        <li>Контакты</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header-nav">
-                <ul class="flex">
-                    <li>Главная</li>
-                    <li>Компания</li>
-                    <li>Каталог</li>
-                    <li>Новости</li>
-                    <li>Спецпредложения</li>
-                    <li>доставка</li>
-                    <li>Контакты</li>
-                </ul>
-            </nav>
         </section>
     </header>
     <main>
@@ -92,14 +99,12 @@
             </div>
         </section>
         <section class="popular-items">
-            <div class="popular-items-head">
-                <div class="container">
+            <div class="container">
+                <div class="popular-items-head">
                     <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
                     <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
-            </div>
-            <div class="popular-items-body">
-                <div class="container">
+                <div class="popular-items-body">
                     <article class="popular-item">
                         <figure>
                             <img src="img/popular-drill-9000.png" width="184" height="164" alt="BFG 9000">
@@ -108,9 +113,8 @@
                             <a href="#">КУПИТЬ</a>
                             <a href="#">В ЗАКЛАДКИ</a>
                         </div>
-                        <!--Вот тут не знаю, стоило ли оборачивать h1 в Див или нет-->
                         <div>
-                            <h1>Перфоратор BOSCH BFG 9000</h1>
+                            <h3>Перфоратор BOSCH BFG 9000</h3>
                         </div>
                         <div class="price">
                             <div class="last-price">32500 Р.</div>
@@ -126,7 +130,7 @@
                             <a href="#">В ЗАКЛАДКИ</a>
                         </div>
                         <div>
-                            <h1>Перфоратор BOSCH BFG 3000</h1>
+                            <h3>Перфоратор BOSCH BFG 3000</h3>
                         </div>
                         <div class="price">
                             <div class="last-price">22500 Р.</div>
@@ -142,7 +146,7 @@
                             <a href="#">В ЗАКЛАДКИ</a>
                         </div>
                         <div>
-                            <h1>Перфоратор BOSCH BFG 6000</h1>
+                            <h3>Перфоратор BOSCH BFG 6000</h3>
                         </div>
                         <div class="price">
                             <div class="last-price">30500 Р.</div>
@@ -158,7 +162,7 @@
                             <a href="#">В ЗАКЛАДКИ</a>
                         </div>
                         <div>
-                            <h1>Перфоратор BOSCH BFG 2000</h1>
+                            <h3>Перфоратор BOSCH BFG 2000</h3>
                         </div>
                         <div class="price">
                             <div class="last-price"></div>
@@ -169,14 +173,12 @@
             </div>
         </section>
         <section class="popular-brands">
-            <div class="popular-brands-head">
-                <div class="container">
+            <div class="container">
+                <div class="popular-brands-head">
                     <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
                     <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </div>
-            </div>
-            <div class="popular-brands-body">
-                <div class="container">
+                <div class="popular-brands-body">
                     <ul>
                         <li><a href="#"><img src="img/popular-bosch.png" width="126" height="37" alt="Bosch"></a></li>
                         <li><a href="#"><img src="img/popular-makita.png" width="123" height="40" alt="Makita"></a></li>
@@ -283,7 +285,7 @@
                     </div>
                     <div class="developer">
                         <span>Разработано</span>
-                        <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                     </div>
                 </div>
             </div>
