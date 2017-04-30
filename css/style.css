@@ -46,11 +46,63 @@
     font-weight: bold;
 }
 
+body {
+    font-family: "Cuprum";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: black;
+}
+
 .container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.header-nav {
+    width: 940px;
+}
+
+.user-logged-in,
+.big-promo-drel {
+    display: none;
+}
+
+.header-phone,
+.header-address {
+    display: block;
+}
+
+.header-description {
+    width: 250px;
+}
+
+.header-bottom div.container.flex.wrap {
+    align-items: flex-end;
+}
+
+.promo-article {
+    width: 300px;
+}
+
+.big-promo {
+    width: 620px;
+}
+
+
+
+
+
 
 .price-filter {
     border: none;
