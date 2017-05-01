@@ -54,6 +54,11 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -65,13 +70,15 @@ body {
     justify-content: space-between;
 }
 
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
 
-.header-nav {
-    width: 940px;
-}
 
 .user-logged-in,
 .big-promo-drel {
@@ -87,9 +94,6 @@ body {
     width: 250px;
 }
 
-.header-bottom div.container.flex.wrap {
-    align-items: flex-end;
-}
 
 .promo-article {
     width: 300px;
@@ -99,12 +103,141 @@ body {
     width: 620px;
 }
 
+.popular-brand {
+    width: 220px;
+    height: 145px;
+}
+
+.guarantee-info,
+.credit-info {
+    display: none;
+} 
+
+.delivery-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-company-nav {
+    width: 548px;
+}
+
+.footer-shop-nav {
+    width: 524px;
+}
+
+.made-by-span {
+    display: block;
+}
+
+.header-top {
+    background-color: #33445a;
+    color: white;
+}
+
+.header-top a {
+    text-decoration: none;
+    color: white;
+}
 
 
+.header-bottom {
+    background-color: #f2f6f8;
+}
 
+.header-nav {
+    background-color: #3d546e;
+}
+
+.header-nav ul {
+    list-style: none;
+}
+
+.header-nav a {
+    color: white;
+}
+
+.materials {
+    background-color: #ffbf47;
+}
+
+.instrument {
+    background-color: #3bbce3;
+}
+
+.technics {
+    background-color: #dc91d8;
+}
+
+.sale {
+    background-color: #8ed78f;
+}
+
+.deliveries {
+    background-color: #ffc047;
+}
+
+.popular-items-head {
+    background-color: #f9f5f0;
+}
+
+.popular-brands-head {
+    background-color: #f9f5f0;
+}
+
+.popular-brands-body ul {
+    list-style: none;
+}
+
+.service {
+    background-color: #f2f6f8;
+}
+
+.footer-top,
+.footer-middle {
+    background-color: #3d546e;
+}
+
+.footer-bottom {
+    background-color: #33445a;
+}
+
+.footer-top a {
+    color: white;
+}
+
+.footer-middle a,
+.footer-bottom a {
+    color: #ffda96;
+}
+
+.pagination {
+    list-style: none;
+}
+
+.footer-company-nav .flex,
+.footer-shop-nav .flex {
+    list-style: none;
+}
+
+.perforators-info {
+    background-color: #f2f6f8;
+}
+
+.perforators-top-nav,
+.filter-header {
+    background-color: #f7f3ec;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
 
 
 .price-filter {
     border: none;
     border-bottom: 1px solid black;
 }
+
+

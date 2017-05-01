@@ -26,22 +26,24 @@
             </div>
         </section>
         <section class="header-bottom">
-            <div class="container flex">
-                <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                <div class="header-contacts">
-                    <span class="header-phone">+7 (812) 555-05-55</span>
-                    <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                </div>
-                <div class="user-login">
-                    <a href="#" class="btn btn-login">Войти</a>
-                    <a href="#" class="btn btn-registration">Регистрация</a>
-                </div>
-                <div class="user-logged-in">
-                    <div class="user-name">
-                        <a href="#">Равшан Джамшутович</a>
+            <div class="container">
+                <div class="header-upper-row flex">
+                    <div class="header-description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</div>
+                    <div class="header-contacts">
+                        <span class="header-phone">+7 (812) 555-05-55</span>
+                        <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                     </div>
-                        <a href="#">Мои заказы</a>
-                        <a href="#">Личный кабинет</a>
+                    <div class="user-login">
+                        <a href="#" class="btn btn-login">Войти</a>
+                        <a href="#" class="btn btn-registration">Регистрация</a>
+                    </div>
+                    <div class="user-logged-in">
+                        <div class="user-name">
+                            <a href="#">Равшан Джамшутович</a>
+                        </div>
+                            <a href="#">Мои заказы</a>
+                            <a href="#">Личный кабинет</a>
+                    </div>
                 </div>
                 <nav class="header-nav">
                     <ul class="flex">
@@ -60,14 +62,14 @@
     <main>
         <section class="perforators-catalog">
             <div class="container">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs flex-start">
                         <li><a href="#" class="home-icon"></a></li>
-                        <li><a href="#"></a>Каталог</li>
-                        <li><a href="#"></a>Инструмент</li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Инструмент</a></li>
                         <li>Перфораторы</li>
                     </ul>
                     <h1 class="perforators-header">Перфораторы</h1>
-                <div class="perforators-catalog-body">
+                <div class="perforators-catalog-body flex">
                     <aside class="filter">
                         <h2 class="filter-header">Фильтр:</h2>
                         <form action="" method="GET">
@@ -115,17 +117,15 @@
                         </form>
                     </aside>
                     <section class="perforators-list">
-                        <nav class="perforators-top-nav">
+                        <nav class="perforators-top-nav flex">
                             <h3>Сортировка</h3>
-                            <ul>
-                                <li><a href>По цене</a></li>
-                                <li><a href="#">По типу</a></li>
-                                <li><a href="#">По функционалу</a></li>
-                            </ul>
+                            <a href>По цене</a>
+                            <a href="#">По типу</a>
+                            <a href="#">По функционалу</a>
                             <span class="arrow-up"></span>
                             <span class="arrow-down"></span>
                         </nav>
-                        <div class="perforators-list-body">
+                        <div class="perforators-list-body flex wrap">
                             <article class="popular-item">
                                 <figure>
                                     <img src="img/popular-drill-3000.png" width="127" height="112" alt="BFG 3000">
@@ -271,7 +271,7 @@
                                 </div>
                             </article>
                         </div>
-                        <ul class="pagination">
+                        <ul class="pagination flex-start">
                             <li><a>1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
@@ -289,11 +289,11 @@
         </section>
     </main>
     <footer>
-        <section class="footer-top flex">
+        <section class="footer-top">
             <div class="container flex">
                 <a href="#" class="footer-logo">Техномарт</a>
                 <nav class="footer-company-nav">
-                    <ul>
+                    <ul class="flex">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Каталог</a></li>
@@ -307,9 +307,9 @@
             <div class="container flex">
                 <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
                 <nav class="footer-shop-nav">
-                    <ul>
+                    <ul class="flex">
                         <li><a href="#">Материалы</a></li>
-                        <li><a href="#">Техника<</a></li>
+                        <li><a href="#">Техника</a></li>
                         <li><a href="#">Инструмент</a></li>
                         <li><a href="#">Спецпредложения</a></li>
                     </ul>
@@ -320,17 +320,17 @@
             <div class="container flex">
                 <small>(с) 2010-2017 Компания "Техномарт"<br>Все права защищены</small>
                 <div class="social">
-                    <div class="icon icon-VK"></div>
-                    <div class="icon icon-FB"></div>
-                    <div class="icon icon-Insta"></div>
+                    <div class="icon iconVK"></div>
+                    <div class="icon iconFB"></div>
+                    <div class="icon iconInsta"></div>
                 </div>
-                <div class="made-by">
+                <div class="made-by flex">
                     <div class="email">
-                        <span>Обратная связь:</span>
+                        <span class="made-by-span">Обратная связь:</span>
                         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                     </div>
                     <div class="developer">
-                        <span>Разработано</span>
+                        <span class="made-by-span">Разработано -</span>
                         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                     </div>
                 </div>
