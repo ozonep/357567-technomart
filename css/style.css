@@ -258,7 +258,7 @@ a {
 .input-search {
     height: 42px;
     border: none;
-    width: 269px;
+    width: 220px;
     padding-left: 47px;
     padding-top: 0;
     padding-bottom: 0;
@@ -266,13 +266,56 @@ a {
     font-family: "Cuprum";
     font-size: 17px;
     box-sizing: border-box;
+}
+
+.label-search {
     position: relative;
+    color: #33445a;
+    /*padding-left: 47px;*/
 }
 
 
 
-.input-search:hover {
+.label-search::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -141px -191px;
+    left: 15px;
+}
+
+
+.input-search:hover,
+.label-search:hover {
     background-color: white;
+}
+
+/*.input-search:hover::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -141px -191px;
+    left: -15px;
+}*/
+
+.label-search:hover::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -141px -191px;
+    left: 19px;
 }
 
 
@@ -293,29 +336,28 @@ a {
    color: white;
 }
 
-.input-search::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 17px;
-    height: 17px;
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    background-position: -141px -191px;
-    left: -15px;
+.bookmarks-container,
+.basket-container {
+    width: 150px;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 43px;
+    font-size: 17px;
 }
 
-.input-search:hover::before {
+.bookmarks-container::before {
     content: "";
     position: absolute;
     display: block;
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 16px;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
-    background-position: -141px -191px;
-    left: -15px;
+    background-position: -82px -168px;
+    left: 15px;
+    bottom: 0;
 }
+
 
 
 
