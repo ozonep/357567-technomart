@@ -75,7 +75,6 @@ a {
 }
 
 
-.user-logged-in,
 .big-promo-drel {
     display: none;
 }
@@ -83,10 +82,6 @@ a {
 .header-phone,
 .header-address {
     display: block;
-}
-
-.header-description {
-    width: 250px;
 }
 
 
@@ -140,10 +135,7 @@ a {
 
 .header-bottom {
     background-color: #f2f6f8;
-}
-
-.header-nav {
-    background-color: #3d546e;
+    min-height: 278px;
 }
 
 .header-nav ul {
@@ -240,7 +232,7 @@ a {
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 8px;
-    padding-left: 55px;
+    padding-left: 55.32px;
     padding-right: 55px;
     background-color: #ff5357;
     box-shadow: 0px 5px #c23f42;
@@ -251,6 +243,7 @@ a {
 }
 
 .search-form {
+    position: relative;
     /*background-color: white;*/
     
 }
@@ -258,10 +251,11 @@ a {
 .input-search {
     height: 42px;
     border: none;
-    width: 220px;
-    padding-left: 47px;
+    width: 270px;
+    padding-left: 48px;
     padding-top: 0;
     padding-bottom: 1px;
+    padding-right: 0;
     background-color: #33445a;
     font-family: "Cuprum";
     font-size: 17px;
@@ -270,7 +264,9 @@ a {
 
 .label-search {
     position: relative;
-    color: #33445a;
+    /*color: #33445a;*/
+    color: white;
+ 
     /*padding-left: 47px;*/
 }
 
@@ -286,6 +282,7 @@ a {
     background-repeat: no-repeat;
     background-position: -141px -191px;
     left: 15px;
+    top: -25px;
 }
 
 
@@ -315,7 +312,7 @@ a {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -141px -191px;
-    left: 19px;
+    left: 190px;
 }
 
 
@@ -340,7 +337,7 @@ a {
     width: 150px;
     box-sizing: border-box;
     position: relative;
-    padding-left: 43px;
+    padding-left: 44px;
     font-size: 17px;
 }
 
@@ -375,7 +372,7 @@ a {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -36px -168px;
-    left: 18px;
+    left: 16px;
     bottom: 5px;
 }
 
@@ -385,7 +382,226 @@ a {
     padding-top: 9px;
     padding-bottom: 9px;
     font-size: 17px;
+    padding-left: 21px;
+    padding-right: 21.22px;
 }
 
+.header-contacts {
+    width: 270px;
+    box-sizing: border-box;
+    margin-left: 18px;
+}
 
+.header-upper-row {
+    min-height: 158px;
+}
 
+.header-description {
+    width: 250px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ff5357;
+    box-sizing: border-box;
+    padding-left: 52px;
+    margin-top: 49px;
+}
+
+.header-phone {
+    width: 270px;
+    position: relative;
+    box-sizing: border-box;
+    border: 3px solid white;
+    min-height: 45px;
+    font-size: 21px;
+    color: #e9292a;
+    padding-top: 8px;
+    padding-left: 72px;
+    margin-top: 46px;
+}
+
+.header-phone::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -116px -191px;
+    left: 12px;
+    bottom: 10px;
+}
+
+.header-address {
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #3d546e;
+}
+
+.user-login {
+    margin-top: 46px;
+    width: 299px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: none;
+}
+
+.btn-login {
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    font-size: 21px;
+    line-height: 18px;
+    padding-right: 25px;
+    padding-left: 46px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+.btn-login::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -166px -168px;
+    left: 13px;
+}
+
+.btn-registration {
+    background-color: white;
+    color: black;
+    font-size: 21px;
+    line-height: 18px;
+    padding-right: 24px;
+    padding-left: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.header-nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    /*align-items: center;*/
+}
+
+.header-link {
+    font-size: 17px;
+    line-height: 17px;
+    padding-top: 20px;
+    display: inline-block;
+    min-height: 60px;
+    background-color: #3d546e;
+    box-sizing: border-box;
+    border-bottom: 2px solid 293449;
+}
+
+.header-link.link-one {
+    padding-left: 52px;
+    padding-right: 34px;
+}
+
+.header-link.link-two {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-link.link-three {
+    padding-left: 29px;
+    padding-right: 30px;
+}
+
+.header-link.link-four {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-link.link-five {
+    padding-left: 29px;
+    padding-right: 30px;
+}
+
+.header-link.link-six {
+    padding-left: 32px;
+    padding-right: 30px;
+}
+
+.header-link.link-seven {
+    padding-left: 33px;
+    padding-right: 54px;
+}
+
+.user-logged-in {
+    /*display: none;*/
+    margin-top: 46px;
+    width: 299px;
+}
+
+.direct-user {
+    color: black;
+    font-size: 21px;
+    line-height: 18px;
+    display: inline-block;
+    margin-top: 13px;
+    margin-left: 47px;
+    position: relative;
+}
+
+.direct-user::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    background-position: -215px -11px;
+    left: -34px;
+}
+
+.direct-user::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 17px;
+    background-position: -62px -191px;
+    right: -56px;
+    bottom: 0;
+}
+
+.user-name {
+    background-color: white;
+    min-height: 44px;
+}
+
+.lichka {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 18px;
+    text-decoration: underline;
+}
+
+.lichka-two {
+    margin-left: 28px;
+    position: relative;
+}
+
+.lichka-two::before {
+    content: "\2022";
+    position: absolute;
+    display: block;
+    left: -17px;
+    font-family: Arial;
+}
