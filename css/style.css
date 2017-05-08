@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/PTSansNarrow.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "Cuprum";
     src: url("../fonts/Cuprum.woff") format("woff");
     font-style: normal;
@@ -53,7 +60,6 @@ a {
     text-decoration: none;
 }
 
-
 .container {
     width: 940px;
     margin: 0 auto;
@@ -75,51 +81,7 @@ a {
 }
 
 
-.big-promo-drel {
-    display: none;
-}
-
-.header-phone,
-.header-address {
-    display: block;
-}
-
-
-.promo-article {
-    width: 300px;
-}
-
-.big-promo {
-    width: 620px;
-}
-
-.popular-brand {
-    width: 220px;
-    height: 145px;
-}
-
-.guarantee-info,
-.credit-info {
-    display: none;
-} 
-
-.delivery-slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.footer-company-nav {
-    width: 548px;
-}
-
-.footer-shop-nav {
-    width: 524px;
-}
-
-.made-by-span {
-    display: block;
-}
+/*СТИЛИЗАЦИЯ HEADER */
 
 .header-top {
     background-color: #33445a;
@@ -131,7 +93,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
 
 .header-bottom {
     background-color: #f2f6f8;
@@ -146,85 +107,9 @@ a {
     color: white;
 }
 
-.materials {
-    background-color: #ffbf47;
-}
-
-.instrument {
-    background-color: #3bbce3;
-}
-
-.technics {
-    background-color: #dc91d8;
-}
-
-.sale {
-    background-color: #8ed78f;
-}
-
-.deliveries {
-    background-color: #ffc047;
-}
-
-.popular-items-head {
-    background-color: #f9f5f0;
-}
-
-.popular-brands-head {
-    background-color: #f9f5f0;
-}
-
-.popular-brands-body ul {
-    list-style: none;
-}
-
-.service {
-    background-color: #f2f6f8;
-}
-
-.footer-top,
-.footer-middle {
-    background-color: #3d546e;
-}
-
-.footer-bottom {
-    background-color: #33445a;
-}
-
-.footer-top a {
-    color: white;
-}
-
-.footer-middle a,
-.footer-bottom a {
-    color: #ffda96;
-}
-
-.pagination {
-    list-style: none;
-}
-
-.footer-company-nav .flex,
-.footer-shop-nav .flex {
-    list-style: none;
-}
-
-.perforators-info {
-    background-color: #f2f6f8;
-}
-
-.perforators-top-nav,
-.filter-header {
-    background-color: #f7f3ec;
-}
-
-.breadcrumbs {
-    list-style: none;
-}
-
-.price-filter {
-    border: none;
-    border-bottom: 1px solid black;
+.header-phone,
+.header-address {
+    display: block;
 }
 
 .header-logo {
@@ -266,11 +151,8 @@ a {
     position: relative;
     /*color: #33445a;*/
     color: white;
- 
     /*padding-left: 47px;*/
 }
-
-
 
 .label-search::before {
     content: "";
@@ -284,7 +166,6 @@ a {
     left: 15px;
     top: -25px;
 }
-
 
 .input-search:hover,
 .label-search:hover {
@@ -315,7 +196,6 @@ a {
     left: 190px;
 }
 
-
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
     font-family: "Cuprum";
@@ -339,6 +219,7 @@ a {
     position: relative;
     padding-left: 44px;
     font-size: 17px;
+    display: block;
 }
 
 .basket-container {
@@ -347,8 +228,8 @@ a {
     position: relative;
     padding-left: 50px;
     font-size: 17px;
+    display: block;
 }
-
 
 .bookmarks-container::before {
     content: "";
@@ -375,7 +256,6 @@ a {
     left: 16px;
     bottom: 5px;
 }
-
 
 .btn-checkout {
     background-color: #63a63e;
@@ -604,4 +484,1022 @@ a {
     display: block;
     left: -17px;
     font-family: Arial;
+}
+
+
+
+
+
+
+/*СТИЛИЗАЦИЯ PROMO*/
+
+.big-promo-drel {
+    display: none;
+}
+
+/*.big-promo-perforator {
+    display: none;
+}*/
+
+
+.promo-article {
+    width: 300px;
+    min-height: 123px;
+    position: relative;
+}
+
+.big-promo {
+    width: 620px;
+}
+
+.materials {
+    background-color: #ffbf47;
+    overflow: hidden;
+}
+
+.instrument {
+    background-color: #3bbce3;
+}
+
+.technics {
+    background-color: #dc91d8;
+}
+
+.sale {
+    background-color: #8ed78f;
+}
+
+.deliveries {
+    background-color: #ffc047;
+}
+
+.promo-upper-row {
+    margin-top: 59px;
+}
+
+.promo-lower-row {
+    margin-top: 20px;
+    min-height: 266px;
+}
+
+.promo-article h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    margin-top: 22px;
+    margin-left: 22px;
+    margin-bottom: 0;
+}
+
+.promo-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo-article a {
+    display: inline-block;
+    margin-left: 23px;
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.promo-article.materials a {
+    padding-top: 11px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 9px;
+    margin-left: 25px;
+}
+
+.promo-article.instrument a {
+    margin-left: 25px;
+    padding-top: 11px;
+    padding-left: 27px;
+    padding-right: 26px;
+    padding-bottom: 9px;
+}
+
+.promo-article.technics a {
+    padding-top: 11px;
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-bottom: 9px;
+}
+
+.promo-article.sale a {
+    padding-top: 11px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 9px;
+}
+
+.promo-article.deliveries a {
+    padding-top: 11px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 9px;
+}
+
+.promo-article.materials::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 65px;
+    background-position: -3px -3px;
+    left: 213px;
+    top: 30px;
+}
+
+.promo-article.materials::after {
+    content: "new";
+    display: block;
+    position: absolute;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    top: 5px;
+    right: -24px;
+    background-color: #ff5357;
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+    transform: rotate(45deg);
+}
+
+.promo-article.instrument::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 61px;
+    background-position: -53px -3px;
+    left: 197px;
+    top: 33px;
+}
+
+.promo-article.technics::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 62px;
+    background-position: -3px -81px;
+    left: 191px;
+    top: 31px;
+}
+
+.promo-article.sale::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 72px;
+    background-position: -134px -3px;
+    left: 195px;
+    top: 26px;
+}
+
+.promo-article.deliveries::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 63px;
+    background-position: -87px -81px;
+    left: 191px;
+    top: 32px;
+}
+
+.big-promo a {
+    display: inline-block;
+    width: 195px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-left: 2px;
+    margin-top: 101px;
+    margin-left: 25px;
+}
+
+.big-promo h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    padding-top: 26px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.big-promo h2 {
+    color: white;
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.big-promo-perforator {
+    background-image: url("../img/slider1.png");
+}
+
+.big-promo-drel {
+    background-image: url("../img/slider2.png");
+}
+
+.big-promo .header-container {
+    min-height: 105px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ ПОПУЛЯРНЫХ ТОВАРОВ*/
+
+.popular-items {
+    margin-top: 53px;
+}
+
+.popular-items-head {
+    background-color: #f9f5f0;
+    min-height: 89px;
+    box-sizing: border-box;
+}
+
+.popular-items-head h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 29px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #3d546e;
+}
+
+.popular-items-head a {
+    width: 253px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-left: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 24px;
+}
+
+.popular-items-body {
+    margin-top: 20px;
+}
+
+.popular-item {
+    width: 220px;
+    min-height: 318px; 
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hover-buttons {
+    display: none;
+}
+
+.popular-item figure {
+    margin: 0;
+}
+
+.BFG9000 img {
+    margin-top: 5px;
+}
+
+.BFG3000 img {
+    margin-top: 28px;
+    margin-right: 12px;
+}
+
+.BFG6000 img {
+    margin-top: 21px;
+    margin-right: 21px;
+}
+
+.BFG2000 img {
+    margin-top: 27px;
+    margin-right: 28px;
+}
+
+.BFG2000 {
+    position: relative;
+}
+
+.BFG2000::after {
+    content: "new";
+    display: block;
+    position: absolute;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    top: 5px;
+    right: -24px;
+    background-color: #ff5357;
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+    transform: rotate(45deg);
+}
+
+
+.popular-item h3 {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+.last-price {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #a9a9a9;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.new-price {
+    width: 122px;
+    height: 38px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: white;
+    background-color: #ff5357;
+    padding-top: 10px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    margin-left: -11px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.new-price::after {
+    content: "";
+    position: absolute;
+    border: 19px solid transparent;
+    border-left: 19px solid #ff5357;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 122px;
+    bottom: 0;
+}
+
+.popular-item .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 137px;
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ ПОПУЛЯРНЫХ БРЕНДОВ*/
+
+.popular-brands {
+    margin-top: 21px;
+}
+
+.popular-brands-head {
+    background-color: #f9f5f0;
+    min-height: 89px;
+    box-sizing: border-box;
+}
+
+.popular-brands-head h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #3d546e;
+}
+
+.popular-brands-head a {
+    width: 253px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-left: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 24px;
+}
+
+.popular-brand a {
+    display: flex;
+    width: 220px;
+    height: 145px;
+    border: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.popular-brand {
+    margin-top: 20px;
+}
+
+.popular-brands-body ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.Makita img {
+    margin-top: -5px;
+}
+
+.DeWalt img {
+    margin-top: -5px;
+}
+
+.InterSkol img {
+    margin-top: -15px;
+}
+
+.Hitachi img {
+    margin-top: 1px;
+    margin-left: 3px;
+}
+
+.AEG img {
+    margin-top: -2px;
+}
+
+.Metabo img {
+    margin-top: -6px;
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ РАЗДЕЛА СЕРВИС*/
+
+/*.credit-info {
+    display: none;
+} */
+
+.delivery-info {
+    display: none;
+}
+
+.guarantee-info {
+    display: none;
+}
+
+.service {
+    background-color: #f2f6f8;
+    min-height: 522px;
+    margin-top: 85px;
+}
+
+
+.services-description h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 68px;
+    margin: 0;
+}
+
+.services-description p {
+    width: 400px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 29px;
+}
+
+.delivery-guarantee-credit {
+    min-height: 333px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.delivery-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 272px;
+    position: relative;
+}
+
+.delivery-slider::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/background.png);
+    height: 272px;
+    width: 10px;
+    right: 0;
+}
+
+.delivery-slider a {
+    height: 62px;
+    background-color: #32425c;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: normal;
+    padding-left: 22px;
+    padding-top: 21px;
+    width: 240px;
+}
+
+.delivery-info {
+    margin-left: 80px;
+    min-height: 333px;
+    width: 620px;
+    background-image: url("../img/service-truck.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.delivery-info h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 24px;
+    margin-top: 55px;
+    color: #3d546e;
+}
+
+.delivery-info p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    width: 276px;
+    text-align: left;
+}
+
+.guarantee-info {
+    margin-left: 80px;
+    min-height: 333px;
+    width: 620px;
+    background-image: url("../img/service-guarantee.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.guarantee-info h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 24px;
+    margin-top: 55px;
+    color: #3d546e;
+}
+
+.guarantee-info p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    width: 379px;
+    text-align: left;
+}
+
+.credit-info {
+    margin-left: 80px;
+    min-height: 333px;
+    width: 620px;
+    background-image: url("../img/service-credit.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.credit-info h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 24px;
+    margin-top: 55px;
+    color: #3d546e;
+}
+
+.credit-info p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    width: 379px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.credit-info a {
+    display: inline-block;
+    margin-top: 25px;
+    width: 195px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/*СТИЛИЗАЦИЯ РАЗДЕЛА С КАРТОЙ*/
+
+.company-info-address {
+    min-height: 536px;
+    box-sizing: border-box;
+    padding-top: 82px;
+}
+
+.company-info-address h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.company-info-address p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.company-address {
+    width: 300px;
+}
+
+.company-info {
+    width: 520px;
+}
+
+.company-address p {
+    margin-bottom: 32px;
+}
+
+.paragraph-info {
+    margin-top: 24px;
+}
+
+.company-link {
+    display: block;
+    margin-top: 31px;
+    width: 300px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    padding-left: 5px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.company-info ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 21px;
+    padding-left: 35px;
+}
+
+.company-info li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.company-info li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -215px -3px;
+    left: -35px;
+    top: 9px;
+}
+
+.company-info a {
+    display: block;
+    margin-top: 35px;
+    width: 220px;
+    height: 38px;
+    background-color: #ff5357;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ ФУТЕРА*/
+
+footer {
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.footer-top {
+    min-height: 63px;
+    box-sizing: border-box;
+}
+
+.footer-company-nav {
+    width: 547px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-shop-nav {
+    width: 524px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.made-by-span {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+.made-by a {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-top,
+.footer-middle {
+    background-color: #3d546e;
+}
+
+.footer-bottom {
+    background-color: #33445a;
+}
+
+.footer-top a {
+    color: white;
+}
+
+.footer-middle a,
+.footer-bottom a {
+    color: #ffda96;
+}
+
+.footer-company-nav .flex,
+.footer-shop-nav .flex {
+    list-style: none;
+}
+
+.footer-logo {
+    width: 220px;
+    height: 63px;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ff5357;
+    box-shadow: 0px 5px #c23f42;
+    box-sizing: border-box;
+    padding-top: 18px;
+}
+
+.footer-company-nav ul {
+    height: 63px;
+    margin: 0;
+    padding-left: 0;
+    align-items: flex-end;
+}
+
+.footer-middle {
+    min-height: 130px;
+    box-sizing: border-box;
+}
+
+.footer-middle .container {
+    min-height: 130px;
+}
+
+.footer-address {
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin: 0;
+    margin-top: 33px;
+    margin-left: 4px;
+}
+
+.footer-shop-nav ul {
+    margin-top: 33px;
+    padding-left: 0;
+}
+
+.footer-bottom {
+    min-height: 107px;
+    box-sizing: border-box;
+}
+
+.footer-bottom .container {
+    min-height: 107px;
+    align-items: center;
+}
+
+small {
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.footer-bottom .social {
+    width: 131px;
+    margin-right: -45px;
+}
+
+.footer-bottom .icon {
+    width: 41px;
+    height: 41px;
+    border-radius: 50px;
+    background-color: #212a3a;
+    position: relative;
+}
+
+.icon-VK::before {
+    content: "";
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 12px;
+    background-position: -199px -59px;
+    top: 16px;
+    left: 10px;
+}
+
+.icon-FB::before {
+    content: "";
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 18px;
+    background-position: -199px -3px;
+    top: 11px;
+    left: 15px;
+}
+
+.icon-Insta::before {
+    content: "";
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-position: -143px -168px;
+    top: 12px;
+    left: 12px;
+}
+
+.made-by .email {
+    margin-right: 51px;
+}
+
+.made-by .developer {
+    margin-right: 13px;
+}
+
+
+
+
+
+
+
+
+
+/*СТРАНИЦА КАТАЛОГ*/
+
+.pagination {
+    list-style: none;
+}
+
+.perforators-info {
+    background-color: #f2f6f8;
+}
+
+.perforators-top-nav,
+.filter-header {
+    background-color: #f7f3ec;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.price-filter {
+    border: none;
+    border-bottom: 1px solid black;
 }
