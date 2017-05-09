@@ -801,6 +801,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .hover-buttons {
@@ -830,11 +831,11 @@ a {
     margin-right: 28px;
 }
 
-.BFG2000 {
+/*.BFG2000 {
     position: relative;
-}
+}*/
 
-.BFG2000::after {
+.popular-items-body .BFG2000::after {
     content: "new";
     display: block;
     position: absolute;
@@ -1497,9 +1498,329 @@ small {
 
 .breadcrumbs {
     list-style: none;
+    padding-left: 0;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    align-items: flex-end;
+    margin-top: 21px;
 }
+
+.home-icon {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background-position: -122px -168px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 3px;
+}
+
+.breadcrumbs a {
+    margin-right: 40px;
+    color: black;
+}
+
+.breadcrumbs li {
+    position: relative;
+}
+
+.arrow-li-one::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/icon-breadcrumb.png");
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 2px;
+}
+
+.arrow-li-one::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/icon-breadcrumb.png");
+    background-repeat: no-repeat;
+    left: -27px;
+    top: 2px;
+}
+
+.arrow-li-two::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/icon-breadcrumb.png");
+    background-repeat: no-repeat;
+    left: -23px;
+    top: 2px;
+}
+
+.arrow-li-three::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/icon-breadcrumb.png");
+    background-repeat: no-repeat;
+    left: -23px;
+    top: 2px;
+}
+
+.perforators-header {
+    min-height: 89px;
+    font-size: 30px;
+    line-height: 89px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-left: 28px;
+    background-color: #f2f6f8;
+    color: #32425c;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.perforators-list {
+    width: 700px;
+}
+
+aside.filter {
+    width: 220px;
+}
+
+.filter-header {
+    margin: 0;
+    min-height: 38px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 38px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding-left: 19px;
+}
+
+.perforators-top-nav {
+    min-height: 38px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.perforators-top-nav h3 {
+    margin: 0;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    padding-left: 19px;
+}
+
+.perforators-top-nav a {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: black;
+    opacity: 0.3;
+    border-bottom: 1px dotted red;
+    height: 18px;
+    box-sizing: border-box;
+}
+
+.arrow-up {
+    border: 7px solid transparent;
+    border-bottom: 10px solid #c6c2bd;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.arrow-down {
+    border: 7px solid transparent;
+    border-top: 10px solid #c6c2bd;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 354px;
+    margin-left: 113px;
+}
+
+.perforators-list-body .popular-item {
+    margin-top: 20px;
+}
+
+.perforators-list-body .popular-item:nth-child(3)::after {
+    content: "new";
+    display: block;
+    position: absolute;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    top: 5px;
+    right: -24px;
+    background-color: #ff5357;
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+    transform: rotate(45deg);
+}
+
+.perforators-list-body .popular-item:nth-child(5)::after {
+    content: "new";
+    display: block;
+    position: absolute;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    top: 5px;
+    right: -24px;
+    background-color: #ff5357;
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+    transform: rotate(45deg);
+}
+
+.perforators-list-body .popular-item:nth-child(7)::after {
+    content: "new";
+    display: block;
+    position: absolute;
+    font-family: "PT Sans Narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    top: 5px;
+    right: -24px;
+    background-color: #ff5357;
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+    transform: rotate(45deg);
+}
+
+.pagination a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 38px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.pagination {
+    padding-left: 0;
+    margin-top: 52px;
+    margin-bottom: 60px;
+}
+
+.pagination .active-pagination {
+    color: white;
+    background-color: #ff5357;
+    border: none;
+}
+
+.pagination .pagination-next {
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.perforators-info {
+    min-height: 261px;
+    box-sizing: border-box;
+}
+
+.perforators-info h2 {
+    padding-top: 68px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.perforators-info p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    color: black;
+    font-weight: normal;
+    margin-top: 29px;
+    margin-bottom: 0;
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ ASIDE*/
 
 .price-filter {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.company-filter {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.energy-filter {
+    border: none;
+}
+
+legend {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+aside label {
+    font-family: "PT Sans";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
