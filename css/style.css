@@ -48,7 +48,7 @@
 }
 
 body {
-    font-family: "Cuprum";
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
@@ -142,7 +142,7 @@ a {
     padding-bottom: 1px;
     padding-right: 0;
     background-color: #33445a;
-    font-family: "Cuprum";
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     box-sizing: border-box;
 }
@@ -198,7 +198,7 @@ a {
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
-    font-family: "Cuprum";
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -483,7 +483,7 @@ a {
     position: absolute;
     display: block;
     left: -17px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -623,7 +623,7 @@ a {
     content: "new";
     display: block;
     position: absolute;
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: white;
@@ -721,7 +721,7 @@ a {
 
 .big-promo h2 {
     color: white;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
@@ -839,7 +839,7 @@ a {
     content: "new";
     display: block;
     position: absolute;
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: white;
@@ -855,7 +855,7 @@ a {
 
 
 .popular-item h3 {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
@@ -866,7 +866,7 @@ a {
 }
 
 .last-price {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -883,7 +883,7 @@ a {
     position: relative;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -1042,7 +1042,7 @@ a {
 
 .services-description p {
     width: 400px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
@@ -1108,7 +1108,7 @@ a {
 }
 
 .delivery-info p {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     width: 276px;
@@ -1134,7 +1134,7 @@ a {
 }
 
 .guarantee-info p {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     width: 379px;
@@ -1160,7 +1160,7 @@ a {
 }
 
 .credit-info p {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     width: 379px;
@@ -1209,7 +1209,7 @@ a {
 }
 
 .company-info-address p {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -1499,7 +1499,7 @@ small {
 .breadcrumbs {
     list-style: none;
     padding-left: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
@@ -1602,7 +1602,7 @@ aside.filter {
 .filter-header {
     margin: 0;
     min-height: 38px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 38px;
     font-weight: normal;
@@ -1620,7 +1620,7 @@ aside.filter {
 
 .perforators-top-nav h3 {
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
@@ -1630,7 +1630,7 @@ aside.filter {
 .perforators-top-nav a {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
@@ -1684,7 +1684,7 @@ aside.filter {
     content: "new";
     display: block;
     position: absolute;
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: white;
@@ -1702,7 +1702,7 @@ aside.filter {
     content: "new";
     display: block;
     position: absolute;
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: white;
@@ -1720,7 +1720,7 @@ aside.filter {
     content: "new";
     display: block;
     position: absolute;
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: white;
@@ -1738,7 +1738,7 @@ aside.filter {
     display: block;
     width: 38px;
     height: 38px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 38px;
     color: black;
@@ -1781,7 +1781,7 @@ aside.filter {
 }
 
 .perforators-info p {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: black;
@@ -1810,7 +1810,7 @@ aside.filter {
 }
 
 legend {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
@@ -1818,7 +1818,7 @@ legend {
 }
 
 aside label {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: normal;
