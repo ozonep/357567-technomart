@@ -12,7 +12,7 @@
     <header>
         <section class="header-top">
             <div class="container flex-start">
-                <a href="./index.html" class="header-logo">Техномарт</a>
+                <a class="header-logo" href="./index.html">Техномарт</a>
                 <form action="http://technomart.org/get" method="GET" class="search-form">
                     <input type="text" placeholder="Поиск:" class="input-search" id="searchik">
                     <label for="searchik" class="label-search"></label>
@@ -20,8 +20,8 @@
                 <a href="#" class="bookmarks-container">
                     Закладки: <span class="bookmark-count">0</span>
                 </a>
-                <a href="#" class="basket-container">
-                    Корзина: <span class="basket-count">0</span>
+                <a href="#" class="basket-container active">
+                    Корзина: <span class="basket-count">10</span>
                 </a>
                 <a href="#" class="btn btn-checkout">Оформить заказ</a>
             </div>
@@ -34,16 +34,17 @@
                         <span class="header-phone">+7 (812) 555-05-55</span>
                         <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                     </div>
-                    <div class="user-login">
+                    <div class="user-login login-catalog">
                         <a href="#" class="btn btn-login">Войти</a>
                         <a href="#" class="btn btn-registration">Регистрация</a>
                     </div>
                     <div class="user-logged-in">
                         <div class="user-name">
-                            <a href="#" class="direct-user">Равшан Джамшутович</a>
+                            <a href="http://tehnopark.ru/profile" class="direct-user">Равшан Джамшутович</a>
+                            <a href="#" class="logout-icon"></a>
                         </div>
-                            <a href="#" class="lichka">Мои заказы</a>
-                            <a href="#" class="lichka lichka-two">Личный кабинет</a>
+                            <a href="#" class="dashboard">Мои заказы</a>
+                            <a href="#" class="dashboard dashboard-two">Личный кабинет</a>
                     </div>
                 </div>
                 <nav class="header-nav">
@@ -82,37 +83,23 @@
                             </fieldset>
                             <fieldset class="company-filter">
                                 <legend>Производители:</legend>
-                                <label for="bosch-input">
-                                    <input type="checkbox" name="bosch" id="bosch-input" checked>
-                                    Bosch
-                                </label><br>
-                                <label for="interskol-input">
-                                    <input type="checkbox" name="interskol" id="interskol-input">
-                                    Интерскол
-                                </label><br>
-                                <label for="makita-input">
-                                    <input type="checkbox" name="makita" id="makita-input" checked>
-                                    Makita
-                                </label><br>
-                                <label for="dewalt-input">
-                                    <input type="checkbox" name="dewalt" id="dewalt-input">
-                                    Dewalt
-                                </label><br>
-                                <label for="hitachi-input">
-                                    <input type="checkbox" name="hitachi" id="hitachi-input">
-                                    Hitachi
-                                </label><br>
+                                <input type="checkbox" name="bosch" id="bosch-input" checked>
+                                <label for="bosch-input" class="checkbox-label"> Bosch</label><br>
+                                <input type="checkbox" name="interskol" id="interskol-input">
+                                <label for="interskol-input" class="checkbox-label">Интерскол</label><br>
+                                <input type="checkbox" name="makita" id="makita-input" checked>
+                                <label for="makita-input" class="checkbox-label">Makita</label><br>
+                                <input type="checkbox" name="dewalt" id="dewalt-input">
+                                <label for="dewalt-input" class="checkbox-label">Dewalt</label><br>
+                                <input type="checkbox" name="hitachi" id="hitachi-input">
+                                <label for="hitachi-input" class="checkbox-label disabled">Hitachi</label><br>
                             </fieldset>
                             <fieldset class="energy-filter">
                                 <legend>Питание:</legend>
-                                <label>
-                                    <input type="radio" name="energy-type" checked>
-                                    Аккумуляторные
-                                </label><br>
-                                <label>
-                                    <input type="radio" name="energy-type">
-                                    Сетевые
-                                </label>
+                                <input type="radio" name="energy-type" id="accum-input" checked>
+                                <label for="accum-input">Аккумуляторные</label><br>
+                                <input type="radio" name="energy-type" id="non-accum-input">
+                                <label for="non-accum-input">Сетевые</label>
                             </fieldset>
                             <input type="submit" value="ПОКАЗАТЬ">
                         </form>
@@ -121,12 +108,12 @@
                         <nav class="perforators-top-nav flex">
                             <h3>Сортировка:</h3>
                             <div class="sort-container">
-                                <a href="#" class="price-sort">По цене</a>
-                                <a href="#">По типу</a>
+                                <a href="#" class="price-sort active">По цене</a>
+                                <a href="#" class="type-sort">По типу</a>
                                 <a href="#" class="functions-sort">По функционалу</a>
                             </div>
                             <div class="arrow-container">
-                                <span class="arrow-up"></span>
+                                <span class="arrow-up active"></span>
                                 <span class="arrow-down"></span>
                             </div>
                         </nav>
@@ -136,8 +123,8 @@
                                     <img src="img/popular-drill-3000.png" width="127" height="112" alt="BFG 3000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 3000</h3>
@@ -150,8 +137,8 @@
                                     <img src="img/popular-drill-6000.png" width="144" height="128" alt="BFG 6000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 6000</h3>
@@ -164,8 +151,8 @@
                                     <img src="img/popular-drill-2000.png" width="127" height="112" alt="BFG 2000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 2000</h3>
@@ -178,8 +165,8 @@
                                     <img src="img/popular-drill-3000.png" width="127" height="112" alt="BFG 3000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 3000</h3>
@@ -192,8 +179,8 @@
                                     <img src="img/popular-drill-6000.png" width="144" height="128" alt="BFG 6000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 6000</h3>
@@ -206,8 +193,8 @@
                                     <img src="img/popular-drill-2000.png" width="127" height="112" alt="BFG 2000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 2000</h3>
@@ -220,8 +207,8 @@
                                     <img src="img/popular-drill-3000.png" width="127" height="112" alt="BFG 3000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 3000</h3>
@@ -234,8 +221,8 @@
                                     <img src="img/popular-drill-6000.png" width="144" height="128" alt="BFG 6000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 6000</h3>
@@ -248,8 +235,8 @@
                                     <img src="img/popular-drill-2000.png" width="127" height="112" alt="BFG 2000">
                                 </figure>
                                 <div class="hover-buttons">
-                                    <a href="#">Купить</a>
-                                    <a href="#">В закладки</a>
+                                    <a href="#"class="buy-button">Купить</a>
+                                    <a href="#" class="bookmark-button">В закладки</a>
                                 </div>
                                 <div class="price">
                                     <h3>Перфоратор BOSCH<br>BFG 2000</h3>
@@ -307,18 +294,18 @@
             <div class="container flex">
                 <small>&#169; 2010-2017 Компания «Техномарт»<br>Все права защищены</small>
                 <div class="social flex">
-                    <a href="#" class="icon icon-VK"></a>
-                    <a href="#" class="icon icon-FB"></a>
-                    <a href="#" class="icon icon-Insta"></a>
+                    <a href="#" class="icon icon-vk"></a>
+                    <a href="#" class="icon icon-fb"></a>
+                    <a href="#" class="icon icon-insta"></a>
                 </div>
                 <div class="made-by flex">
                     <div class="email">
                         <span class="made-by-span">Обратная связь:</span>
-                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        <a href="mailto:mail@htmlacademy.ru" class="email-link">mail@htmlacademy.ru</a>
                     </div>
                     <div class="developer">
                         <span class="made-by-span">Разработано -</span>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" class="course-link">htmlacademy.ru</a>
                     </div>
                 </div>
             </div>
