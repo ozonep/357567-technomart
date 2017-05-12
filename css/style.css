@@ -953,12 +953,13 @@ a {
 }
 
 .hover-buttons {
-    display: flex;
+    /*display: flex;*/
     min-height: 127px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+    display: none;
 }
 
 .buy-button {
@@ -1027,7 +1028,7 @@ a {
 
 .popular-item figure {
     margin: 0;
-    display: none;
+    /*display: none;*/
 }
 
 .BFG9000 img {
@@ -1906,22 +1907,6 @@ small {
     width: 700px;
 }
 
-aside.filter {
-    width: 220px;
-}
-
-.filter-header {
-    margin: 0;
-    min-height: 38px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 13px;
-    line-height: 38px;
-    font-weight: normal;
-    text-transform: uppercase;
-    border-radius: 4px;
-    padding-left: 19px;
-}
-
 .perforators-top-nav {
     min-height: 38px;
     text-transform: uppercase;
@@ -2138,18 +2123,39 @@ aside.filter {
 
 /*СТИЛИЗАЦИЯ ASIDE*/
 
+aside.filter {
+    width: 220px;
+}
+
+.filter-header {
+    margin: 0;
+    min-height: 38px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 38px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding-left: 19px;
+}
+
 .price-filter {
     border: none;
     border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+    padding-bottom: 26px;
 }
 
 .company-filter {
     border: none;
     border-bottom: 1px solid #e5e5e5;
+    margin-top: 16px;
+    padding-bottom: 4px;
 }
 
 .energy-filter {
     border: none;
+    margin-top: 17px;
 }
 
 legend {
@@ -2160,12 +2166,22 @@ legend {
     text-transform: uppercase;
 }
 
+.company-filter legend {
+    margin-bottom: 7px;
+}
+
+.energy-filter legend {
+    margin-bottom: 5px;
+
+}
+
 aside label {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: normal;
     text-transform: uppercase;
     cursor: pointer;
+
 }
 
 input[type="checkbox"] {
@@ -2174,8 +2190,10 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     line-height: 23px;
+    margin-bottom: 17px;
+    display: inline-block;
 }
 
 input[type="checkbox"] + label::before {
@@ -2187,6 +2205,7 @@ input[type="checkbox"] + label::before {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -171px -81px;
+    left:0;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -2215,8 +2234,10 @@ input[type="radio"] {
 
 input[type="radio"] + label {
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     line-height: 25px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 input[type="radio"] + label::before {
@@ -2228,6 +2249,7 @@ input[type="radio"] + label::before {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -204px -123px;
+    left: 0;
 }
 
 input[type="radio"]:checked + label::before {
@@ -2248,4 +2270,101 @@ input[type="radio"] + label.disabled {
 
 input[type="radio"] + label.disabled::before {
     opacity: 0.3;
+}
+
+input[type=submit] {
+    width: 140px;
+    height: 38px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    font-family: "PT Sans";
+    font-size: 13px;
+    border-radius: 3px;
+    margin-top: 52px;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  margin-left: 10%;
+  width: 75%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+
+.price-controls {
+display: flex;
+justify-content: space-between;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  width: 95px;
+  height: 38px;
+  padding-left: 5px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 3px;
+  background: #f7f3ec;
+  box-sizing: border-box;
+}
+
+aside fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+}
+
+.comma {
+    color: black;
+    margin-top: 7px;
 }
