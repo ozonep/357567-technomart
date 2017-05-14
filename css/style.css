@@ -981,7 +981,7 @@ a {
 }
 
 .hover-buttons {
-    /*display: flex;*/
+    display: flex;
     min-height: 127px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -995,7 +995,9 @@ a {
             align-items: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    display: none;
+    position: absolute;
+    z-index: -1;
+    background-color: white;
 }
 
 .buy-button {
@@ -1066,7 +1068,15 @@ a {
 
 .popular-item figure {
     margin: 0;
-    /*display: none;*/
+    background-color: white;
+}
+
+.popular-item:hover figure {
+    visibility: hidden;
+}
+
+.popular-item:hover .hover-buttons {
+    z-index: 5;
 }
 
 .BFG9000 img {
@@ -2328,14 +2338,6 @@ input[type="checkbox"]:checked + label:hover::before {
     background-position: -3px -168px;
 }
 
-input[type="checkbox"] + label.disabled {
-    opacity: 0.4;
-}
-
-input[type="checkbox"] + label.disabled::before {
-    opacity: 0.3;
-}
-
 input[type="radio"] {
     display: none;
 }
@@ -2372,11 +2374,11 @@ input[type="radio"]:checked + label:hover::before {
     background-position: -246px -3px;
 }
 
-input[type="radio"] + label.disabled {
+input:disabled + label {
     opacity: 0.4;
 }
 
-input[type="radio"] + label.disabled::before {
+input:disabled + label::before {
     opacity: 0.3;
 }
 
@@ -2487,6 +2489,7 @@ aside fieldset {
 
 
 
+/*СТИЛИЗАЦИЯ ОКНА ОБРАТНОЙ СВЯЗИ*/
 
 .feedback-container {
     position: absolute;
@@ -2595,4 +2598,123 @@ label.email-input input {
     display: inline-block;
     color: white;
     background-color: #ee3643;
+}
+
+
+
+/*СТИЛИЗАЦИЯ ОКНА КОРЗИНЫ*/
+
+.modal-buy {
+    position: fixed;
+    font-family: "Cuprum", "Arial", sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background transparent;
+    z-index: 99999;
+    opacity:0;
+    /*-webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;*/
+    pointer-events: none;
+}
+
+.modal-buy:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-buy > div {
+    width: 620px;
+    position: relative;
+    margin: 20% auto;
+    /*padding: 5px 20px 13px 20px;*/
+    background-color: #ffffff;
+    border-top: 7px solid #ee3643;
+    min-height: 282px;
+    -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+    box-sizing: border-box;
+}
+
+.upper-modal-bin h2 {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 71px;
+    position: relative;
+    margin: 0;
+    padding-left: 55px;
+}
+
+.upper-modal-bin h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/bin-checked.png");
+    background-repeat: no-repeat;
+    left: 80px;
+    bottom: -22px;
+}
+
+.close {
+    height: 21px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 21px;
+    font-size: 21px;
+    z-index: 10;
+}
+
+.upper-modal-bin {
+    height: 163px;
+}
+
+.lower-modal-bin {
+    height: 112px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.make-order {
+    display: inline-block;
+    margin-top: 25px;
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 11px;
+    margin-right: 17px;
+    margin-top: 37px;
+    color: white;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.continue-buying {
+    display: inline-block;
+    margin-top: 25px;
+    width: 220px;
+    height: 38px;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 37px;
+    padding-top: 11px;
+    color: black;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
