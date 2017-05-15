@@ -62,6 +62,8 @@
         </section>
     </header>
     <main>
+         <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
         <section class="promo">
             <div class="container">
                 <div class="promo-upper-row flex">
@@ -79,20 +81,28 @@
                     </article>
                 </div>
                 <div class="promo-lower-row flex">
-                    <article class="big-promo big-promo-perforator">
-                        <div class="header-container">
-                            <h1>Перфораторы</h1>
-                            <h2>Настоящие мужские игрушки</h2>
+                    <div class="promo-slider">
+                        <article class="big-promo big-promo-perforator" id="slide1">
+                            <div class="header-container">
+                                <h1>Перфораторы</h1>
+                                <h2>Настоящие мужские игрушки</h2>
+                            </div>
+                            <a href="#">Открыть каталог</a>
+                        </article>
+                        <article class="big-promo big-promo-drel" id="slide2">
+                            <div class="header-container">
+                                <h1>Дрели</h1>   
+                                <h2>Соседям на радость</h2>
+                            </div>
+                            <a href="#">Открыть каталог</a>
+                        </article>
+                        <div class="slider-controls">
+                            <label for="btn-1" class="promo-circle"></label>
+                            <label for="btn-2" class="promo-circle"></label>
                         </div>
-                        <a href="#">Открыть каталог</a>
-                    </article>
-                    <article class="big-promo big-promo-drel">
-                        <div class="header-container">
-                            <h1>Дрели</h1>   
-                            <h2>Соседям на радость</h2>
-                        </div>
-                        <a href="#">Открыть каталог</a>
-                    </article>
+                            <label for="btn-1" class="arrow-left"></label>
+                            <label for="btn-2" class="arrow-right"></label>
+                    </div>
                     <div class="promo-right-container">
                         <article class="promo-article sale">
                             <h1>Скидки 50%</h1>
@@ -237,26 +247,9 @@
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
                     <a href="https://goo.gl/maps/dcmSV68UJ8t" class="map"><img src="img/map-mini.png" alt="Karta" width="300" height="158"></a>
-                    <a href="#" class="company-link">Заблудились? Напишите нам!</a>
+                    <a href="#open-feedback" class="company-link">Заблудились? Напишите нам!</a>
                 </div>
             </div>
-        </section>
-        <section class="feedback-container">
-            <form action="index.php" method="POST">
-                <label class="name-input">
-                    Ваше имя:<br>
-                    <input type="text" placeholder="Представьтесь, пожалуйста">
-                </label>
-                <label class="email-input">
-                    Ваш E-mail:<br>
-                    <input type="email" placeholder="Для отправки ответа">
-                </label>
-                <label class="letter-text">
-                    Текст письма:<br>
-                    <textarea name="plain-text" id="customer-text" cols="58" rows="10" placeholder="В свободной форме"></textarea>
-                </label>
-                <input type="submit" class="feedback-submit" value="отправить">
-            </form>
         </section>
     </main>
     <footer>
@@ -308,5 +301,27 @@
             </div>
         </section>
     </footer>
+    <div id="open-feedback" class="feedback-container">
+            <form action="index.php" method="POST">
+                <a href="#close" class="close"></a>
+                <div class="upper-feedback-form">
+                    <label class="name-input">
+                        Ваше имя:<br>
+                        <input type="text" placeholder="Представьтесь, пожалуйста">
+                    </label>
+                    <label class="email-input">
+                        Ваш e-mail:<br>
+                        <input type="email" placeholder="Для отправки ответа">
+                    </label>
+                    <label class="letter-text">
+                        Текст письма:<br>
+                        <textarea name="plain-text" id="customer-text" cols="10" rows="7" placeholder="В свободной форме"></textarea>
+                    </label>
+                </div>
+                <div class="lower-feedback-form">
+                    <input type="submit" class="feedback-submit" value="отправить">
+                </div>
+            </form>
+    </div>
 </body>
 </html>

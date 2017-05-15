@@ -624,14 +624,79 @@ a {
 
 /*СТИЛИЗАЦИЯ PROMO*/
 
+.slider-controls label.promo-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 36px;
+  left: 295px;
+  z-index: 20;
+  font-size: 0;
+  height: 10px;
+}
+
+.promo-slider {
+    position: relative;
+}
+
+.promo input[type="radio"] {
+    display: none;
+}
+
 /*.big-promo-drel {
     display: none;
 }*/
 
-.big-promo-perforator {
+/*.big-promo-perforator {
     display: none;
+}*/
+
+#btn-1:checked ~ .promo #slide1,
+#btn-2:checked ~ .promo #slide2 {
+  display: block;
 }
 
+#btn-1:checked ~ .promo label.promo-circle[for="btn-1"],
+#btn-2:checked ~ .promo label.promo-circle[for="btn-2"] {
+  background-color: #ee3643;
+  border: 2px solid white;
+}
+
+label.arrow-left {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -200px -77px;
+    left: 25px;
+    top: 115px;
+}
+
+label.arrow-right {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 40px;
+    ackground-color: transparent;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -241px -34px;
+    right: 20px;
+    top: 115px;
+}
 
 .promo-article {
     width: 300px;
@@ -641,6 +706,8 @@ a {
 
 .big-promo {
     width: 620px;
+    min-height: 266px;
+    display: none;
 }
 
 .materials {
@@ -782,6 +849,7 @@ a {
     padding-top: 4px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    z-index.: 10;
 }
 
 .promo-article.instrument::before {
@@ -1115,6 +1183,7 @@ a {
     padding-top: 4px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    z-index: 10;
 }
 
 .popular-item h3 {
@@ -2051,17 +2120,17 @@ small {
 
 .arrow-up {
     border: 7px solid transparent;
-    border-bottom: 10px solid #c6c2bd;
+    border-bottom: 11px solid #c6c2bd;
     display: block;
     width: 0;
     height: 0;
-    margin-bottom: 8px;
+    margin-top: -6px;
     margin-left: 20px;
 }
 
 .arrow-down {
     border: 7px solid transparent;
-    border-top: 10px solid #c6c2bd;
+    border-top: 11px solid #c6c2bd;
     display: block;
     width: 0;
     height: 0;
@@ -2083,15 +2152,15 @@ small {
 }
 
 .arrow-up:hover {
-    border-bottom: 10px solid black;
+    border-bottom: 11px solid black;
 }
 
 .arrow-container .active {
-    border-bottom: 10px solid #ee3643;
+    border-bottom: 11px solid #ee3643;
 }
 
 .arrow-down:hover {
-    border-top: 10px solid black;
+    border-top: 11px solid black;
 }
 
 
@@ -2130,6 +2199,7 @@ small {
     padding-top: 4px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    z-index: 10;
 }
 
 .perforators-list-body .popular-item:nth-child(5)::after {
@@ -2149,6 +2219,7 @@ small {
     padding-top: 4px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    z-index: 10;
 }
 
 .perforators-list-body .popular-item:nth-child(7)::after {
@@ -2168,6 +2239,7 @@ small {
     padding-top: 4px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    z-index: 10;
 }
 
 .pagination a {
@@ -2492,30 +2564,60 @@ aside fieldset {
 /*СТИЛИЗАЦИЯ ОКНА ОБРАТНОЙ СВЯЗИ*/
 
 .feedback-container {
-    position: absolute;
+    position: fixed;
+    font-family: "Cuprum", "Arial", sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background transparent;
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+}
+
+.feedback-container:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.feedback-container form {
     width: 620px;
-    height: 430px;
-    margin: 50% 50%;
-    z-index: 5;
+    position: relative;
+    min-height: 430px;
+    margin: -215px auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    top: 50%;
+    background-color: #ffffff;
     border-top: 7px solid #ee3643;
-    -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
-            box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+        -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+    box-sizing: border-box;
+}
+
+.upper-feedback-form {
+    width: 460px;
+    height: 311px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.lower-feedback-form {
+    height: 112px;
+    text-align: center;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    padding-top: 1px;
 }
 
 .feedback-container .name-input,
 .feedback-container .email-input {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 47px;
     width: 220px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-}
-
-.feedback-container form {
-    width: 460px;
-    margin: 0 auto;
 }
 
 label.name-input {
@@ -2531,10 +2633,11 @@ label.email-input {
 }
 
 label.letter-text {
+    display: inline-block;
     font-size: 18px;
     line-height: 18px;
+    margin-top: 21px;
 }
-
 
 label.name-input input,
 label.email-input input {
@@ -2542,7 +2645,10 @@ label.email-input input {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 1px solid #d7dcde;
-    padding-top: 12px;
+    padding-left: 14px;
+    height: 38px;
+    vertical-align: center;
+    margin-top: 9px;
 }
 
 .feedback-container input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -2566,9 +2672,13 @@ label.email-input input {
 
 .feedback-container textarea {
     width: 460px;
+    height: 114px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 1px solid #d7dcde;
+    margin-top: 9px;
+    padding-left: 14px;
+    padding-top: 8px;
 }
 
 .feedback-container textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -2590,14 +2700,25 @@ label.email-input input {
    font-size: 13px;
 }
 
-.feedback-submit {
+input.feedback-submit {
     font-size: 14px;
-    width: 620px;
+    line-height: 18px;
+    padding-top: 5px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: normal;
+    width: 460px;
     height: 38px;
     box-sizing: border-box;
-    display: inline-block;
+    display: block;
     color: white;
     background-color: #ee3643;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 36px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
@@ -2627,12 +2748,12 @@ label.email-input input {
 
 .modal-buy > div {
     width: 620px;
+    min-height: 282px;
     position: relative;
-    margin: 20% auto;
-    /*padding: 5px 20px 13px 20px;*/
+    margin: -141px auto;
+    top: 50%;
     background-color: #ffffff;
     border-top: 7px solid #ee3643;
-    min-height: 282px;
     -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
     box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
     box-sizing: border-box;
@@ -2670,6 +2791,7 @@ label.email-input input {
     width: 21px;
     font-size: 21px;
     z-index: 10;
+    background-image: url("../img/Cross.png");
 }
 
 .upper-modal-bin {
