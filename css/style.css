@@ -2706,6 +2706,7 @@ input.feedback-submit {
     display: block;
     color: white;
     background-color: #ee3643;
+    border: none;
     text-align: center;
     margin-left: 80px;
     margin-top: 36px;
