@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -14,8 +15,8 @@
             <div class="container flex-start">
                 <a class="header-logo">Техномарт</a>
                 <form action="http://technomart.org/get" method="GET" class="search-form">
-                    <input type="text" placeholder="Поиск:" class="input-search" id="searchik">
-                    <label for="searchik" class="label-search"></label>
+                    <input type="text" placeholder="Поиск:" class="input-search" id="search-header">
+                    <label for="search-header" class="label-search"></label>
                 </form>
                 <a href="#" class="bookmarks-container">
                     Закладки: <span class="bookmark-count">0</span>
@@ -29,7 +30,7 @@
         <section class="header-bottom">
             <div class="container">
                 <div class="header-upper-row flex">
-                    <div class="header-description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</div>
+                    <div class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</div>
                     <div class="header-contacts">
                         <span class="header-phone">+7 (812) 555-05-55</span>
                         <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -62,12 +63,12 @@
         </section>
     </header>
     <main>
-         <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-1" name="toggle" class="invisible-radio" checked>
+        <input type="radio" id="btn-2" class="invisible-radio" name="toggle">
         <section class="promo">
             <div class="container">
                 <div class="promo-upper-row flex">
-                    <article class="promo-article materials">
+                    <article class="promo-article materials new-item">
                         <h1>Материалы</h1>
                         <a href="#">На любой вкус</a>
                     </article>
@@ -125,9 +126,9 @@
                 <div class="popular-items-body flex">
                     <article class="popular-item bfg9000">
                         <figure>
-                            <img src="img/popular-drill-9000.png" width="184" height="164" alt="BFG 9000">
+                            <img src="img/popular-drill-9000.jpg" width="184" height="164" alt="BFG 9000">
                         </figure>
-                        <div class="hover-buttons">
+                        <div class="hover-buttons" id="lol">
                             <a href="#" class="buy-button">Купить</a>
                             <a href="#" class="bookmark-button">В закладки</a>
                         </div>
@@ -139,7 +140,7 @@
                     </article>
                     <article class="popular-item bfg3000">
                         <figure>
-                            <img src="img/popular-drill-3000.png" width="127" height="112" alt="BFG 3000">
+                            <img src="img/popular-drill-3000.jpg" width="127" height="112" alt="BFG 3000">
                         </figure>
                         <div class="hover-buttons">
                             <a href="#" class="buy-button">Купить</a>
@@ -153,7 +154,7 @@
                     </article>
                     <article class="popular-item bfg6000">
                         <figure>
-                            <img src="img/popular-drill-6000.png" width="144" height="128" alt="BFG 6000">
+                            <img src="img/popular-drill-6000.jpg" width="144" height="128" alt="BFG 6000">
                         </figure>
                         <div class="hover-buttons">
                             <a href="#" class="buy-button">Купить</a>
@@ -165,18 +166,18 @@
                             <div class="new-price">25500 Р.</div>
                         </div>
                     </article>
-                    <article class="popular-item bfg2000">
+                    <article class="popular-item bfg2000 new-item">
                         <figure>
-                            <img src="img/popular-drill-2000.png" width="127" height="112" alt="BFG 2000">
+                            <img src="img/popular-drill-2000.jpg" width="127" height="112" alt="BFG 2000">
                         </figure>
                         <div class="hover-buttons">
                             <a href="#" class="buy-button">Купить</a>
                             <a href="#" class="bookmark-button">В закладки</a>
                         </div>
                         <div class="price">
-                            <h3>Перфоратор BOSCH BFG 2000</h3>
+                            <h3 class="strong-price-head">Перфоратор BOSCH BFG 2000</h3>
                             <div class="last-price"></div>
-                            <div class="new-price">12500 Р.</div>
+                            <div class="new-price strong-price">12500 Р.</div>
                         </div>
                     </article>
                 </div>
@@ -190,14 +191,14 @@
                 </div>
                 <div class="popular-brands-body">
                     <ul class="flex wrap">
-                        <li class="popular-brand"><a href="#" class="pop-link bosch"><img src="img/popular-bosch.png" width="126" height="37" alt="Bosch"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link makita"><img src="img/popular-makita.png" width="123" height="40" alt="Makita"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link dewalt"><img src="img/popular-dewalt.png" width="146" height="44" alt="DeWalt"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link interskol"><img src="img/popular-interskol.png" width="200" height="88" alt="InterSkol"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link hitachi"><img src="img/popular-hitachi.png" width="169" height="31" alt="Hitachi"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link lg"><img src="img/popular-lg.png" width="121" height="73" alt="LG"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link aeg"><img src="img/popular-aeg.png" width="151" height="96" alt="AEG"></a></li>
-                        <li class="popular-brand"><a href="#" class="pop-link metabo"><img src="img/popular-metabo.png" width="204" height="69" alt="Metabo"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link bosch"><img src="img/popular-bosch.jpg" width="126" height="37" alt="Bosch"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link makita"><img src="img/popular-makita.jpg" width="123" height="40" alt="Makita"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link dewalt"><img src="img/popular-dewalt.jpg" width="146" height="44" alt="DeWalt"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link interskol"><img src="img/popular-interskol.jpg" width="200" height="88" alt="InterSkol"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link hitachi"><img src="img/popular-hitachi.jpg" width="169" height="31" alt="Hitachi"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link lg"><img src="img/popular-lg.jpg" width="121" height="73" alt="LG"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link aeg"><img src="img/popular-aeg.jpg" width="151" height="96" alt="AEG"></a></li>
+                        <li class="popular-brand"><a href="#" class="pop-link metabo"><img src="img/popular-metabo.jpg" width="204" height="69" alt="Metabo"></a></li>
                     </ul>
                 </div>
             </div>
@@ -210,9 +211,9 @@
                 </div>
                 <div class="delivery-guarantee-credit flex">
                     <div class="delivery-slider flex">
-                        <a href="#">Доставка</a>
+                        <a href="#" class="active">Доставка</a>
                         <a href="#">Гарантия</a>
-                        <a href="#" class="active">Кредит</a>
+                        <a href="#">Кредит</a>
                     </div>
                     <div class="delivery-info">
                         <h2>Доставка</h2>
@@ -235,7 +236,7 @@
                 <div class="company-info">
                     <h2>Компания «Техномарт»</h2>
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-                    <p class="paragraph-info">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
+                    <p class="paragraph-info">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
                     <ul>
                         <li>Деловые линии</li>
                         <li>Автотрейдинг</li>
@@ -245,8 +246,8 @@
                 </div>
                 <div class="company-address">
                     <h2>Контакты</h2>
-                    <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-                    <a href="https://goo.gl/maps/dcmSV68UJ8t" class="map"><img src="img/map-mini.png" alt="Karta" width="300" height="158"></a>
+                    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+                    <a href="https://goo.gl/maps/dcmSV68UJ8t" class="map"><img src="img/map-mini.jpg" alt="Karta" width="300" height="158"></a>
                     <a href="#open-feedback" class="company-link">Заблудились? Напишите нам!</a>
                 </div>
             </div>
@@ -256,7 +257,7 @@
         <section class="footer-top">
             <div class="container flex">
                 <a href="#" class="footer-logo">Техномарт</a>
-                <nav class="footer-company-nav">
+                <div class="footer-company-nav">
                     <ul class="flex">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
@@ -264,25 +265,25 @@
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                </nav>
+                </div>
             </div> 
         </section>
         <section class="footer-middle">
             <div class="container flex">
-                <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-                <nav class="footer-shop-nav">
+                <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+                <div class="footer-shop-nav">
                     <ul class="flex">
                         <li><a href="#">Материалы</a></li>
                         <li><a href="#">Техника</a></li>
                         <li><a href="#">Инструмент</a></li>
                         <li><a href="#">Спецпредложения</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </section>
         <section class="footer-bottom">
             <div class="container flex">
-                <small class="copyright-info">&#169; 2010-2017 Компания «Техномарт»<br>Все права защищены</small>
+                <small class="copyright-info">&#169; 2010-2017 Компания «Техномарт» Все права защищены</small>
                 <div class="social flex">
                     <a href="#" class="icon icon-vk"></a>
                     <a href="#" class="icon icon-fb"></a>
@@ -302,26 +303,26 @@
         </section>
     </footer>
     <div id="open-feedback" class="feedback-container">
-            <form action="index.php" method="POST">
-                <a href="#close" class="close"></a>
-                <div class="upper-feedback-form">
-                    <label class="name-input">
-                        Ваше имя:<br>
-                        <input type="text" placeholder="Представьтесь, пожалуйста">
-                    </label>
-                    <label class="email-input">
-                        Ваш e-mail:<br>
-                        <input type="email" placeholder="Для отправки ответа">
-                    </label>
-                    <label class="letter-text">
-                        Текст письма:<br>
-                        <textarea name="plain-text" id="customer-text" cols="10" rows="7" placeholder="В свободной форме"></textarea>
-                    </label>
-                </div>
-                <div class="lower-feedback-form">
-                    <input type="submit" class="feedback-submit" value="отправить">
-                </div>
-            </form>
+        <form action="index.php" method="POST">
+            <a href="#close" class="close"></a>
+            <div class="upper-feedback-form">
+                <label class="name-input">
+                    Ваше имя:
+                    <input type="text" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label class="email-input">
+                    Ваш e-mail:
+                    <input type="email" placeholder="Для отправки ответа">
+                </label>
+                <label class="letter-text">
+                    Текст письма:
+                    <textarea name="plain-text" id="customer-text" cols="10" rows="7" placeholder="В свободной форме"></textarea>
+                </label>
+            </div>
+            <div class="lower-feedback-form">
+                <input type="submit" class="feedback-submit" value="отправить">
+            </div>
+        </form>
     </div>
 </body>
 </html>
